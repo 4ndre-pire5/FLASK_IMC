@@ -6,7 +6,7 @@ class Person():
         self.description = ''
 
     def from_dict(dictionary):
-        height = dictionary['heigth']
+        height = dictionary['height']
         weight = dictionary['weight']
 
         p = Person(height, weight)
@@ -14,7 +14,7 @@ class Person():
     
     def to_dict(self):
         d = dict()
-        d['heigth'] = self.height
+        d['height'] = self.height
         d['weight'] = self.weight
         d['imc'] = self.imc
         d['description'] = self.description
